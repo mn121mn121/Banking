@@ -41,7 +41,7 @@
         </PasswordField>
         <HBox alignment="CENTER" prefHeight="112.0" prefWidth="385.0">
             <children>
-                <Button fx:id="submit" mnemonicParsing="false" text="Submit">
+                <Button fx:id="submit" mnemonicParsing="false" text="Display">
                     <HBox.margin>
                         <Insets />
                     </HBox.margin>

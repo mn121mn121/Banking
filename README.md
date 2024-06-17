@@ -15,7 +15,12 @@ This repository is a Java-based Account Management System developed using JavaFX
 ## Project Structure
 
 ```
-account-management-system/
+Banking/
+│
+├── out/
+│   └── artifacts/
+│       └── Banking_jar/
+│           └── Banking.jar
 │
 ├── src/
 │   └── account/
@@ -27,26 +32,9 @@ account-management-system/
 └── ...
 ```
 
-- **src/account/Main.java**: The main Java file containing the application logic and user interface implementation using JavaFX.
+- **out/artifacts/Banking_jar/Banking.jar**: A jar file which can be downloaded and executed to directly run the JavaFX Application.
+- **src/account/Main.java**: The main Java file containing the application home page.
 - **Bank.txt**: The file used to store account details in the format `accountNumber:password:amount`.
-
-## Setup and Installation
-
-1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/your-username/account-management-system.git
-   cd account-management-system
-   ```
-
-2. **Open the project in your preferred Java IDE**.
-
-3. **Ensure JavaFX is set up**:
-   - Add the JavaFX library to your project's build path.
-   - You can download JavaFX from [here](https://gluonhq.com/products/javafx/).
-
-4. **Run the Application**:
-   - Locate the `Main.java` file in the `src/account/` directory.
-   - Run the `Main.java` file as a Java Application.
 
 ## Usage
 
@@ -54,26 +42,22 @@ account-management-system/
 
 1. Launch the application.
 2. Navigate to the "Create Account" section.
-3. Enter a 12-digit account number and a 6-letter password.
+3. Enter a 12-digit account number and a 6-letter password and confirm password.
 4. Click "Create".
 
 ### Displaying Account Details
 
-1. Navigate to the "Display Account" section.
+1. Navigate to the "Show Details" section.
 2. Enter your account number and password.
 3. Click "Display" to view the account details.
 
-### Depositing Amount
+### Depositing/Withdrawing Amount
 
-1. Navigate to the "Deposit" section.
-2. Enter your account number, password, and the amount to deposit.
-3. Click "Deposit".
+1. Navigate to the "Deposit / Withdraw" section.
+2. Enter your account number, password.
+3. Select the transaction type and enter the amount to deposit/withdraw.
+4. Click "Submit".
 
-### Withdrawing Amount
-
-1. Navigate to the "Withdraw" section.
-2. Enter your account number, password, and the amount to withdraw.
-3. Click "Withdraw".
 
 ## Data Storage Format
 
@@ -84,5 +68,5 @@ The account details are stored in the `Bank.txt` file in the following format:
 ```
 - `123456789012`: 12-digit account number
 - `abcdef`: 6-letter password
-- `00100000`: Account balance
+- `00100000`: Account balance (<= 9,00,00,000)
 
